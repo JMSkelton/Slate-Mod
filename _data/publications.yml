@@ -1,0 +1,49 @@
+- type: preprint
+  authors:
+    - A. Bored-Student
+  title: "101 Cat Memes You Wish You Could Unsee"
+  year: 2019
+  arxiv: 1234.56789
+
+- type: journal-article
+  authors:
+    - A. N. Author
+    - A. Contributor
+    - A. Supervisor
+  title: "Lies, damned lies and machine learning: predictive capabilities of artificial intelligence trained on fake news"
+  journal: "Journal of Irreproducible Results"
+  year: 2019
+  doi: 10.666/jir.fail.2019.001
+
+- type: conference-proceedings
+  authors:
+    - Kanzi the Bonobo
+    - Dolly the Sheep
+    - D. Greybeard
+    - Grumpy Cat
+  title: "Crediting animals as contributors to research: best practices"
+  journal: "Philosophical Transactions on Contemporary Publishing"
+  volume: 999
+  pages: 1-10
+  year: 2018
+  doi: 10.666/pcmp.wtf.2018.999
+
+- type: book-chapter
+  authors:
+    - A. Student
+    - T. Supervisor
+  title: "Electro-Photonics in Chemistry: Fast and Integrable Lithography"
+  book_title: "Science Unplugged: Research Without the Editing or Review"
+  editors:
+    - A. Fake-Name
+  series: "DAP Scientific Publications"
+  volume: 1
+  year: 2017
+  publisher: Dubious Academic Publishing Limited
+  publication_place: Tokelau
+  doi: 10.666/666-1-234-56789-0
+  isbn:
+    - type: print
+      number: 666-1-234-56789-0
+    - type: online
+      number: 666-1-234-56789-0

@@ -1,0 +1,37 @@
+/*
+Colours:
+
+  Slate-Mod defines two dark and two light colours.
+  The dark colours are used for the header background gradient, navbar/footer background and dark text.
+  The light colours are used for the background of the content area, pre/code blocks and light text.
+  A fifth colour is defined for links, including the hover colour of the navbar elements.
+
+  $colour-dark-1  : gradient in header section, navbar, footer, header text.
+  $colour-dark-2  : gradient in header section, dark text, table borders, table header background.
+  $colour-light-1 : background of main content section.
+  $colour-light-2 : light text, pre/code background.
+  $colour-link    : hover background of navbar elements, links in main content section.
+*/
+
+$colour-dark-1: #212121;
+$colour-dark-2: #373737;
+
+$colour-light-1: #f2f2f2;
+$colour-light-2: #ffffff;
+
+$colour-link: #4d4dff;
+
+
+/*
+Fonts:
+
+    Slate-Mod defines three sets of fonts:
+
+    $font-family-1 : default for text.
+    $font-family-2 : headers.
+    $font-family-3 : pre/code blocks.
+*/
+
+$font-family-1: 'Myriad Pro', 'Calibri', 'Helvetica', 'Arial', sans-serif;
+$font-family-2: 'Lucida Grande', 'Calibri', 'Helvetica', 'Arial', sans-serif;
+$font-family-3: 'Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console', 'Terminal', monospace;

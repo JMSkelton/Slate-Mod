@@ -1,0 +1,12 @@
+@mixin transition($arg) {
+	/* CSS working draft. */
+	
+	transition: $arg;
+	
+	/* Vendor-prefix properties. */
+	
+	-moz-transition: $arg;
+	-ms-transition: $arg;
+	-o-transition: $arg;
+	-webkit-transition: $arg;
+}
