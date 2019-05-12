@@ -7,5 +7,5 @@ title: Research
 
 This is a second site page to illustrate how the navbar works.
 
-The contents of the navbar are set in `_data/navbar.yml`.
-If this file is present, the `link` and `text` fields from the records are used to build the navbar automatically.
+The contents of the navbar are set in `_config.yml`.
+If the `navbar` key is present and has one or list entries, the `link` and `text` fields are used to build the navbar content.

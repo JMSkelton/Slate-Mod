@@ -34,13 +34,13 @@
   </header>
 </div>
 
-{% if site.data.navbar and site.data.navbar.size > 0 -%}
+{% if site.navbar and site.navbar.size > 0 -%}
 <!-- body: Navigation + Content -->
 
 <div id="navbar_wrap" class="outer">
   <nav id="navbar" class="inner">
     <ul>
-    {%- for item in site.data.navbar %}
+    {%- for item in site.navbar %}
       {%- if item.link and item.text %}
       <li><a href="{{ item.link }}">{{ item.text }}</a></li>
       {%- endif %}
@@ -62,7 +62,7 @@
 
 <div id="footer_wrap" class="outer">
   <footer class="inner">
-    <p>Published with <a href="https://pages.github.com">GitHub Pages</a> using the Slate-Mod theme</p>
+    <p>Published with <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/skelton-group/jekyll-theme-slate-mod">Slate-Mod</a> theme</p>
   </footer>
 </div>
 
