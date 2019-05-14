@@ -2,7 +2,7 @@ title: Slate-Mod theme
 description: Slate-Mod is a modified version of the Slate theme for use on research group websites
 lang: en-GB
 
-theme: jekyll-theme-slate-mod
+remote_theme: skelton-group/jekyll-theme-slate-mod
 
 navbar:
   - link: "index.html"
