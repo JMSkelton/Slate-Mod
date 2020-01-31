@@ -233,7 +233,6 @@ form {
 
 .inner {
   margin: 0 auto;
-  max-width: 800px;
   padding: 20px 10px;
   position: relative;
 }
@@ -335,10 +334,16 @@ form {
 }
 
 
-/**************
- Mobile Devices
- **************/
+/*********
+ Overrides
+ *********/
 
+@media screen and (min-width: 1000px) {
+  .inner {
+    width: 80%;
+	min-width: 1000px;
+	}
+ 
 @media screen and (max-width: 992px) {
   img {
     max-width: 100%;
