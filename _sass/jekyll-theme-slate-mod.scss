@@ -287,7 +287,7 @@ form {
 }
 
 #navbar > ul {
-  align-content: space-around;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -296,7 +296,6 @@ form {
 }
 
 #navbar > ul > li {
-  flex: 1;
   text-align: center;
 }
 
