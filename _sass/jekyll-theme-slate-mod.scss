@@ -108,17 +108,8 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: calc(100% - 10px);
   padding: 5px;
-}
-
-p img {
-  border: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  vertical-align: middle;
 }
 
 hr {
@@ -205,6 +196,7 @@ table {
 
 th {
   background: $colour-dark-2;
+  border: 1px solid $colour-dark-2;
   color: $colour-light-2;
   font-family: $font-family-2;
   padding: 10px;
@@ -286,7 +278,6 @@ form {
 }
 
 #navbar > ul {
-  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -295,7 +286,8 @@ form {
 }
 
 #navbar > ul > li {
-  text-align: center;
+  min-width: 120px;
+  padding: 0px 20px;
 }
 
 #navbar > ul > li:hover {
@@ -344,12 +336,6 @@ form {
     min-width: 800px;
     }
   }
- 
-@media screen and (max-width: 992px) {
-  img {
-    max-width: 100%;
-  }
-}
 
 @media screen and (max-width: 480px) {
   body {
