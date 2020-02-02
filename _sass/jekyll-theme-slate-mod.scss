@@ -286,7 +286,9 @@ form {
 }
 
 #navbar > ul > li {
-  padding: 0 40px 0 20px;
+  flex: 1;
+  max-width: 120px;
+  padding: 0 20px;
 }
 
 #navbar > ul > li:hover {
