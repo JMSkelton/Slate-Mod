@@ -19,6 +19,16 @@
   <meta property="og:locale" content="{{ site.lang | default: "en-GB" }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta prpoerty="og:url" content="{{ site.url }}">
+{%- if page.custom_css and page.custom_css.size > 0 %}
+  {% for item in page.custom_css %}
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ item }}">
+  {%- endfor -%}
+{%- endif %}
+{%- if page.custom_js and page.custom_js.size > 0 %}
+  {% for item in page.custom_js %}
+  <script src="{{ item }}"></script>
+  {%- endfor -%}
+{%- endif %}
 </head>
 
 <!-- body -->
