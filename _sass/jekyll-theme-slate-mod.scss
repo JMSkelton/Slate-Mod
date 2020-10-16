@@ -311,6 +311,8 @@ form {
  "Responsive Design"
  *******************/
 
+/* Large or Portrait Phones */
+
 @media screen and (min-width: 576px) {
   h1 {
     font-size: 28px;
@@ -319,23 +321,23 @@ form {
   h2 {
     font-size: 24px;
   }
-
+  
   h3 {
     font-size: 21px;
   }
-
+  
   h4 {
     font-size: 18px;
   }
-
+  
   h5 {
     font-size: 14px;
   }
-
+  
   h6 {
     font-size: 12px;
   }
-
+  
   #project_title {
     font-size: 32px;
   }
@@ -348,6 +350,8 @@ form {
     flex-basis: calc((1 / 3) * 100%);
   }
 }
+
+/* Portrait Tablets, Small Desktop Windows */
 
 @media screen and (min-width: 768px) {
   body {
@@ -395,21 +399,25 @@ form {
   }
 }
 
+/* Landscape Tablets, Typical Browser Windows */
+
 @media screen and (min-width: 960px) {
   .inner {
     max-width: 800px;
   }
-
+  
   #navbar > ul > li {
     flex-basis: 0;
-	flex-grow: 1;
-	flex-shrink: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }
+
+/* Large Browser Windows */
 
 @media screen and (min-width: 1200px) {
   .inner {
     max-width: none;
-	width: 66%;
+    width: 66%;
   }
 }
