@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: $font-family-1;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -46,27 +46,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
   font-size: 24px;
 }
 
-h4 {
+h2 {
   font-size: 21px;
 }
 
-h5 {
+h3 {
   font-size: 18px;
 }
 
-h6 {
+h4 {
   font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 /* Text and Images */
@@ -126,7 +126,7 @@ pre, code {
   border-radius: 2px;
   color: $colour-dark-1;
   font-family: $font-family-3;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 pre {
@@ -240,7 +240,7 @@ form {
 
 #project_title {
   color: $colour-light-2;
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 700;
   margin: 0;
 }
@@ -248,7 +248,7 @@ form {
 #project_tagline {
   background: none;
   color: $colour-light-2;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -281,7 +281,6 @@ form {
 #navbar > ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -289,6 +288,8 @@ form {
 
 #navbar > ul > li {
   padding: 0 25px;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 #navbar > ul > li:hover {
@@ -306,56 +307,15 @@ form {
 }
 
 
-/****
- Misc
- ****/
+/*******************
+ "Responsive Design"
+ *******************/
 
-.google_maps_container {
-  max-width: 600px;
-  overflow: hidden;
-  padding-top: 50%;
-  position: relative;
-}
-
-.google_maps_iframe {
-  border: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-
-/*********
- Overrides
- *********/
-
-@media screen and (min-width: 800px) {
-  .inner {
-    width: 60%;
-    min-width: 800px;
-    }
-  }
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  .inner {
-    max-width: 480px;
-    min-width: 320px;
-  }
-
-  #project_title {
-	  font-size: 32px;
-  }
-
+@media screen and (min-width: 576px) {
   h1 {
     font-size: 28px;
   }
-
+  
   h2 {
     font-size: 24px;
   }
@@ -374,62 +334,82 @@ form {
 
   h6 {
     font-size: 12px;
-  }
-
-  code, pre {
-    font-size: 11px;
-  }
-
-  #navbar > ul > li {
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  body {
-    font-size:14px;
-  }
-
-  .inner {
-    max-width: 320px;
-    min-width: 240px;
   }
 
   #project_title {
-	  font-size: 28px;
+    font-size: 32px;
   }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
+  
+  #project_tagline {
     font-size: 21px;
   }
-
-  h3 {
-    font-size: 18px;
+  
+  #navbar > ul > li {
+    flex-basis: calc((1 / 3) * 100%);
   }
+}
 
-  h4 {
+@media screen and (min-width: 768px) {
+  body {
     font-size: 16px;
   }
-
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 21px;
+  }
+  
   h5 {
+    font-size: 18px;
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+  
+  pre, code {
     font-size: 14px;
   }
-
-  h6 {
-    font-size: 12px;
+  
+  #project_title {
+    font-size: 42px;
   }
+  
+  #project_tagline {
+    font-size: 24px;
+  }
+  
+  #navbar > ul > li {
+    flex-basis: 25%;
+  }
+}
 
-  code, pre {
-    font-size: 11px;
-    max-width: 320px;
-    min-width: 240px;
+@media screen and (min-width: 960px) {
+  .inner {
+    max-width: 800px;
   }
 
   #navbar > ul > li {
-    flex-basis: 100%;
+    flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner {
+    max-width: none;
+	width: 66%;
   }
 }
